@@ -1,0 +1,19 @@
+name: AWS CDK
+description: Run AWS CDK commands as a GitHub Action
+branding:
+  icon: cloud
+  color: orange
+inputs:
+  command:
+    description: CDK command to execute
+    required: true
+  stacks:
+    description: Stacks to execute the command against
+    required: true
+  working_directory:
+    description: Directory to execute CDK commands from
+    required: false
+    default: '.'
+runs:
+  using: docker
+  image: docker://developmentanddinosaurs/github-actions-aws-cdk:latest
