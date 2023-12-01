@@ -1,4 +1,4 @@
-name: AWS CDK
+name: AWS CDK Runner
 description: Run AWS CDK commands as a GitHub Action
 branding:
   icon: cloud
