@@ -71,7 +71,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::123456789:role/my-cdk-deploy-role
       - name: ☁️ Deploy CDK
-        uses: development-and-dinosaurs/github-actions-aws-cdk@v1.0.3
+        uses: development-and-dinosaurs/github-actions-aws-cdk@v1.0.4
         with:
           command: deploy
           stack: MyApplication
