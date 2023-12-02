@@ -1,4 +1,4 @@
-name: 🚀 Publish Docker
+name: 🐋 Publish Docker
 
 on:
   release:
@@ -7,12 +7,12 @@ on:
 
 jobs:
   publish:
-    name: 🚀 Publish Docker
+    name: 🐋 Publish Docker
     runs-on: ubuntu-latest
     steps:
       - name: 🛒 Checkout code
         uses: actions/checkout@v4
-      - name: 🚀 Publish Docker
+      - name: 🐋 Publish Docker
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: developmentanddinosaurs/github-actions-aws-cdk
