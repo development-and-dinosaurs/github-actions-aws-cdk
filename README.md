@@ -47,7 +47,7 @@ credentials, and automatically makes them available for this action to use.
 
 ```yaml
 - name: ☁️ Deploy CDK
-  uses: development-and-dinosaurs/github-actions-aws-cdk@v1.0.5
+  uses: development-and-dinosaurs/github-actions-aws-cdk@v2
   with:
     command: deploy
     stacks: MyApplication
@@ -80,7 +80,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::123456789:role/my-cdk-deploy-role
       - name: ☁️ Deploy CDK
-        uses: development-and-dinosaurs/github-actions-aws-cdk@v1.0.5
+        uses: development-and-dinosaurs/github-actions-aws-cdk@v2
         with:
           command: deploy
           stacks: MyApplication
