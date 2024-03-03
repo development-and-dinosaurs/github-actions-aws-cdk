@@ -16,4 +16,4 @@ inputs:
     default: '.'
 runs:
   using: docker
-  image: docker://developmentanddinosaurs/github-actions-aws-cdk:1.0.5
+  image: docker://developmentanddinosaurs/github-actions-aws-cdk:1
