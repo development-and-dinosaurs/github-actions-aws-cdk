@@ -4,8 +4,9 @@ GitHub Action for running the AWS CDK using the JVM.
 
 This action runs commands using the AWS CDK, optimised for JVM languages.
 
-See the [AWS CDK documentation](https://aws.amazon.com/cdk/) for full information on requirements and prerequisites for
-using the AWS CDK in your AWS account.
+See the [AWS CDK documentation](https://aws.amazon.com/cdk/) for full
+information on requirements and prerequisites for using the AWS CDK in your AWS
+account.
 
 ## Supported Technologies
 
@@ -24,29 +25,37 @@ required. [Raise an issue](https://github.com/development-and-dinosaurs/github-a
 
 ## Outputs
 
-None. 
+None.
 
-Need an output in your workflow? [Raise an issue](https://github.com/development-and-dinosaurs/github-actions-aws-cdk/issues/new).
+Need an output in your
+workflow? [Raise an issue](https://github.com/development-and-dinosaurs/github-actions-aws-cdk/issues/new).
 
-## Credentials 
+## Credentials
 
-The AWS CDK requires credentials to perform actions. You must use a separate action to configure AWS credentials and make them available to this action via environment variables. 
+The AWS CDK requires credentials to perform actions. You must use a separate
+action to configure AWS credentials and make them available to this action via
+environment variables.
 
-We recommend using the ["Configure AWS Credentials" Action for GitHub Actions](https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions) for handling credentials, as this supplies numerous secure ways of accessing credentials, and automatically makes them available for this action to use. 
+We recommend using
+the ["Configure AWS Credentials" Action for GitHub Actions](https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions)
+for handling credentials, as this supplies numerous secure ways of accessing
+credentials, and automatically makes them available for this action to use.
 
 ## Examples
 
 ### Action
+
 ```yaml
 - name: ☁️ Deploy CDK
   uses: development-and-dinosaurs/github-actions-aws-cdk@v1.0.5
   with:
     command: deploy
-    stack: MyApplication
+    stacks: MyApplication
     working_directory: path/to/my/infrastructure/app
 ```
 
 ### Full Workflow
+
 ```yaml
 name: 🚀 Deploy CDK App
 
@@ -74,6 +83,6 @@ jobs:
         uses: development-and-dinosaurs/github-actions-aws-cdk@v1.0.5
         with:
           command: deploy
-          stack: MyApplication
+          stacks: MyApplication
           working_directory: path/to/my/infrastructure/app
 ```
