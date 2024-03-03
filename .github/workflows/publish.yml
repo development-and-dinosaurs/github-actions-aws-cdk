@@ -2,7 +2,8 @@ name: 🐋 Publish Docker
 
 on:
   release:
-    types: [ published ]
+    types:
+      - published
     workflow_dispatch:
 
 jobs:
