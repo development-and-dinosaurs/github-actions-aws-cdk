@@ -21,7 +21,7 @@ required. [Raise an issue](https://github.com/development-and-dinosaurs/github-a
 |-------------------|----------------------------------------|----------|---------|
 | command           | CDK command to execute                 | true     | n/a     |
 | stacks            | Stacks to execute the command against  | true     | n/a     |
-| working_directory | Directory to execute CDK commands from | false    | .       |
+| working-directory | Directory to execute CDK commands from | false    | .       |
 
 ## Outputs
 
@@ -51,7 +51,7 @@ credentials, and automatically makes them available for this action to use.
   with:
     command: deploy
     stacks: MyApplication
-    working_directory: path/to/my/infrastructure/app
+    working-directory: path/to/my/infrastructure/app
 ```
 
 ### Full Workflow
@@ -84,5 +84,5 @@ jobs:
         with:
           command: deploy
           stacks: MyApplication
-          working_directory: path/to/my/infrastructure/app
+          working-directory: path/to/my/infrastructure/app
 ```

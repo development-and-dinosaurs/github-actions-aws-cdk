@@ -10,7 +10,7 @@ inputs:
   stacks:
     description: Stacks to execute the command against
     required: true
-  working_directory:
+  working-directory:
     description: Directory to execute CDK commands from
     required: false
     default: '.'
